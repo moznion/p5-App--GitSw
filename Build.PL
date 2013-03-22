@@ -31,7 +31,7 @@ my $builder = Module::Build->new(
     meta_merge => {
         'resources' => {
             'license'    => 'http://dev.perl.org/licenses/',
-            'repository' => 'git://github.com/moznion/App--GitSw.git',
+            'repository' => 'git://github.com/moznion/p5-App--GitSw.git',
         },
     },
     test_files => ( -d '.git' || $ENV{RELEASE_TESTING} ) ? 't/ xt/' : 't/',
