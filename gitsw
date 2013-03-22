@@ -1,0 +1,34 @@
+#!perl
+
+use strict;
+use warnings;
+use utf8;
+use 5.008009;
+use App::GitSw;
+use Cwd;
+use File::Basename qw/dirname/;
+
+sub _find_dir {
+    my ($target) = @_;
+    my $current_dir = getcwd();
+    my %seen;
+    while (-d $current_dir) {
+        return undef if $seen{$current_dir}++;
+        if (-d "$current_dir/$target") {
+            return "$current_dir/$target";
+        }
+        $current_dir = dirname($current_dir);
+    }
+}
+
+unless (@ARGV) {
+    print "NO!!!\n"; # FIXME
+    exit(1);
+}
+
+my $git_dir = _find_dir('.git');
+unless ($git_dir) {
+    die "fatal: Not a git repository\n";
+}
+
+App::GitSw->new($git_dir)->run(@ARGV);

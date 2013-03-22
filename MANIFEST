@@ -1,0 +1,25 @@
+Build.PL
+Changes
+gitsw
+lib/App/GitSw.pm
+MANIFEST			This list of files
+README
+t/00.load.t
+t/01.init.t
+t/02.list.t
+t/03.switch.t
+t/04.create.t
+t/05.exceptional.t
+t/resource/create_test/.gitsw/.gitsw_profile
+t/resource/create_test/.gitsw/default/config
+t/resource/list_test/.gitsw/.gitsw_profile
+t/resource/list_test/.gitsw/default/config
+t/resource/list_test/.gitsw/smith/config
+t/resource/list_test/.gitsw/tom/config
+xt/00.vars.t
+xt/01.pod.t
+xt/02.podspell.t
+xt/99.perlcritic.t
+LICENSE
+META.yml
+META.json
