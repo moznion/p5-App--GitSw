@@ -22,7 +22,7 @@ SYNOPSIS
 DESCRIPTION
     gitsw is the profile (config) switcher for Git.
 
-    This application can switch each profiles and create prifiles.
+    This application can switch each profiles and create profiles.
 
 DEPENDENCIES
     Config::Simple (version 4.58 or later)

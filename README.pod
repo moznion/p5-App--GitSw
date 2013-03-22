@@ -31,7 +31,7 @@ This document describes App::GitSw version 0.0.1
 
 gitsw is the profile (config) switcher for Git.
 
-This application can switch each profiles and create prifiles.
+This application can switch each profiles and create profiles.
 
 
 =head1 DEPENDENCIES
